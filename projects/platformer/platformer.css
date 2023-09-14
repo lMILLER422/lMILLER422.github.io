@@ -3,9 +3,5 @@ body {
 }
 
 canvas {
-  background-color: lightgray;
-}
-
-img {
-  display: none;
+  background-color: rgb(138, 186, 230);
 }

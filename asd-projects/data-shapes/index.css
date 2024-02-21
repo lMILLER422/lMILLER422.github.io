@@ -27,13 +27,13 @@
 }
 
 #shape {
-  color: white;
+  color: rgb(255, 255, 255);
   width: 100px;
   height: 100px;
   position: relative;
   top: 150px;
   left: 150px;
-  border: white solid 2px;
+  border: rgb(255, 255, 255) solid 2px;
   display: block;
 }
 

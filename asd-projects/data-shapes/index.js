@@ -39,7 +39,7 @@ $(document).ready(function () {
   // TODO 0 complete
   // TODO 1: create a new shape object and add it to the array
   var shapes = {
-    color: "red",
+    color: "blue",
     shape: "circle",
     repeat: 3,
   }
@@ -49,13 +49,12 @@ $(document).ready(function () {
     let currentShape = dataShapes[i];
     if (currentShape.color = "red") {
       currentShape.goodBehavior = "bounce";
-    } else if (currentShape.color === "red") {
+    } else if (currentShape.color === "blue") {
       currentShape.goodBehavior = "blink";
     } else {
       currentShape.goodBehavior = "spin" ;
     }
   }
-
   // TODO 3-a: add a function that handles the static display type
   function handleStatic(data) {
     setBackgroundWithObject(data);

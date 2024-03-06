@@ -50,7 +50,7 @@ snake.body = [];
 makeSnakeSquare(10, 10);
 snake.head = snake.body[0];
   // TODO 4b-2: initialize the apple
-init(apple);
+makeApple();
   // TODO 5a: Initialize the interval
 // start update interval
 updateInterval = setInterval(update, 100);
@@ -98,7 +98,7 @@ function checkForNewDirection(event) {
   }
   // FILL IN THE REST
 
-  console.log(snake.head.direction);     // uncomment me!
+  //console.log(snake.head.direction);     // uncomment me! //
 }
 
 function moveSnake() {
@@ -122,19 +122,19 @@ function moveSnake() {
   of snake.head.direction which may be one of "left", "right", "up", or "down"
   */
   if (snake.head.direction === "left") {
-    snake.head.column = snake.head.row - 1;
+    snake.head.column = snake.head.collumn - 1;
   }
   repositionSquare(snake.head);
   if (snake.head.direction === "right") {
-    snake.head.column = snake.head.row + 1;
+    snake.head.column = snake.head.collumn + 1;
   }
   repositionSquare(snake.head);
   if (snake.head.direction === "up") {
-    snake.head.column = snake.head.column + 1;
+    snake.head.row = snake.head.row - 1;
   }
   repositionSquare(snake.head);
   if (snake.head.direction === "down") {
-    snake.head.column = snake.head.column - 1;
+    snake.head.row = snake.head.row + 1;
   }
   repositionSquare(snake.head);
 }
